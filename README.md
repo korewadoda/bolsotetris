@@ -1,2 +1,2 @@
 # bolsotetris
-Bolsotetris Js App
+Tetris feito em Javascript com a temática do presidente atual, Jair Messias Bolsonaro.
