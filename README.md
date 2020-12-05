@@ -1,2 +1,2 @@
 # bolsotetris
-Tetris feito em Javascript com a temática do presidente atual, Jair Messias Bolsonaro.
+Tetris feito em Javascript com a temática do atual presidente do Brasil, Jair Messias Bolsonaro.
