@@ -149,14 +149,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function rotate() {
-        undraw()
+    	const isAtLeftEdge = current.some(index => (currentPosition + index) % width === 0)
+    	const isAtRightEdge = current.some(index=> (currentPosition + index) % width === width -1)
+    	if(isAtLeftEdge == false && isAtRightEdge == false ){
+
+    		undraw()
         currentRotation ++ 
         if(currentRotation == current.length) {
             currentRotation = 0
-        }
-        
-        current = theTetrominoes[random][currentRotation]
+         }
+
+          current = theTetrominoes[random][currentRotation]
+
         draw()
+
+    	}
+       
     }
     
     
@@ -226,29 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     
 })
